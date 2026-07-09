@@ -1,6 +1,25 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Clock, MapPin, Smartphone, Instagram, ShieldCheck, ChevronRight } from 'lucide-react';
+import { MapPin, Smartphone, ShieldCheck, ChevronRight } from 'lucide-react';
+import photoOne from '@assets/grok_image_1783544362923_1783620480323.jpg';
+import photoTwo from '@assets/grok_image_1783544367897~2_1783620480367.jpg';
+import photoThree from '@assets/grok_image_1783544358780_1783620480424.jpg';
+import photoFour from '@assets/grok_image_1783544430469~2_1783620480479.jpg';
+import photoFive from '@assets/grok_image_1783544923500~2_1783620480549.jpg';
+import photoSix from '@assets/grok_image_1783262434742_1783620480643.jpg';
+import newOne from '@assets/att.KBCkluyCB5ipSrAIFl7BQmMoOgA2jHdvka9a2y5i6kg.jpg_1783621341044.jpeg';
+import newTwo from '@assets/Messenger_creation_A779F943-F2FC-4A0F-9719-8BECAE086266_1783621341102.jpeg';
+import newThree from '@assets/att.320wZ1HNb8L-eiGvydRtbOyQn5pH75BJrNo0GcmU2jU.jpg_1783621341133.jpeg';
+import newFour from '@assets/Messenger_creation_0049B76C-9BD8-401A-8780-6406493FF851_1783621341162.jpeg';
+import newFive from '@assets/Messenger_creation_C9ADC891-ACB7-42E4-A71E-4BAEC0767730_1783621341188.jpeg';
+import newSix from '@assets/Messenger_creation_7FC442C4-AEFF-4AAC-8986-5D2EA1924AE2_1783621341223.jpeg';
+import newSeven from '@assets/att.WpbZurcXQxHO6rfT_kxeXg5Zue11Y9IX67QIS3apL-g.jpg_1783621341261.jpeg';
+import newEight from '@assets/Messenger_creation_DE88ABA8-3AF7-46F3-8BED-E426C87F4958_1783621341290.jpeg';
+import newNine from '@assets/Messenger_creation_879608AA-6A53-4299-8E67-8A9F68EE6EFE_1783621341321.jpeg';
+import newTen from '@assets/Messenger_creation_8904F64A-6118-465D-806D-157F9901DF77_1783621341350.jpeg';
+import newEleven from '@assets/Messenger_creation_143E05BE-6310-4D01-8749-6D3DDB8BD22B_1783621341385.jpeg';
+import newTwelve from '@assets/Messenger_creation_BA103442-E7B1-4EEE-AB70-E3CD7F0341E5_1783621341421.jpeg';
+import bookingBg from '@assets/Messenger_creation_7FC442C4-AEFF-4AAC-8986-5D2EA1924AE2_1783621341223.jpeg';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -54,6 +73,27 @@ const pseIncludes = [
   "toys", "spanking", "deepthroating", "rimming on me", "COB", "gagging", 
   "role play", "sloppy BBBJ", "MSOG", "costumes", "hair pulling", 
   "light anal play", "rough sex in any position"
+];
+
+const galleryImages = [
+  photoOne,
+  photoTwo,
+  photoThree,
+  photoFour,
+  photoFive,
+  photoSix,
+  newOne,
+  newTwo,
+  newThree,
+  newFour,
+  newFive,
+  newSix,
+  newSeven,
+  newEight,
+  newNine,
+  newTen,
+  newEleven,
+  newTwelve,
 ];
 
 export default function Home() {
@@ -127,24 +167,87 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-32 px-6 md:px-12 max-w-4xl mx-auto relative">
-        <motion.div 
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={fadeUp}
-          className="text-center space-y-12"
-        >
-          <h2 className="text-3xl md:text-5xl font-serif text-secondary mb-12">The Experience</h2>
-          <div className="text-lg md:text-2xl leading-relaxed font-light text-foreground/90 space-y-8">
-            <p>
-              A cheeky Aussie brunette with hypnotic green eyes and a petite 5' frame... flirty, confident, and just the right amount of trouble.
-            </p>
-            <p>
-              My GFE style is warm, relaxed, and deliciously intimate... but PSE is where I truly shine.
-            </p>
-          </div>
-        </motion.div>
+      <section className="py-32 px-6 md:px-12 max-w-7xl mx-auto relative">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeUp}
+            className="order-2 lg:order-1"
+          >
+            <h2 className="text-3xl md:text-5xl font-serif text-secondary mb-12">The Experience</h2>
+            <div className="text-lg md:text-2xl leading-relaxed font-light text-foreground/90 space-y-8">
+              <p>
+                A cheeky Aussie brunette with hypnotic green eyes and a petite 5' frame, perfectly balanced with curves in all the right places. Soft lips, tempting energy, and a playful spark that loves to blur the line between sweet and sinful.
+              </p>
+              <p>
+                I'm the kind of woman who can make you laugh one minute and lose your train of thought the next. Flirty, confident, and just the right amount of trouble. I turn casual chats into irresistible temptation and leave you wondering what might happen next.
+              </p>
+              <p>
+                My GFE style is warm, relaxed, and deliciously intimate. Think slow touches, genuine connection, and that addictive feeling of being completely seen and wanted. But when the mood shifts, my adventurous side takes over. PSE is where I truly shine — exploring chemistry, teasing boundaries, and creating moments that feel spontaneous, electric, and unforgettable.
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
+            className="order-1 lg:order-2 relative"
+          >
+            <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-transparent rounded-2xl blur-2xl" />
+            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-border/50 shadow-2xl">
+              <img 
+                src={photoOne} 
+                alt="Alexa Gray" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="py-24 px-6 bg-card/10 border-y border-border">
+        <div className="max-w-7xl mx-auto">
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeUp}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-serif text-secondary mb-4 text-glow">Gallery</h2>
+            <p className="text-muted-foreground text-sm uppercase tracking-widest">Recent & verified</p>
+          </motion.div>
+
+          <motion.div 
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            {galleryImages.map((image, i) => (
+              <motion.div 
+                key={i}
+                variants={fadeUp}
+                className="group relative aspect-[3/4] rounded-xl overflow-hidden border border-border/50 cursor-pointer"
+              >
+                <img 
+                  src={image} 
+                  alt={`Alexa Gray ${i + 1}`}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 border border-secondary/0 group-hover:border-secondary/30 transition-colors duration-500 rounded-xl" />
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
       </section>
 
       {/* Quick Facts Dossier */}
@@ -295,7 +398,12 @@ export default function Home() {
 
       {/* Booking CTA */}
       <section className="py-40 px-6 relative overflow-hidden">
-        {/* Deep red ambient glow for this section */}
+        {/* Background image with heavy dark overlay */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
+          style={{ backgroundImage: `url(${bookingBg})` }}
+        />
+        <div className="absolute inset-0 bg-black/80" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
         
         <motion.div 
@@ -307,7 +415,7 @@ export default function Home() {
         >
           <h2 className="text-5xl md:text-6xl font-serif text-foreground mb-8">Ready for trouble?</h2>
           
-          <div className="bg-card/40 backdrop-blur-sm border border-border p-8 rounded-lg mb-12 text-left">
+          <div className="bg-black/60 backdrop-blur-sm border border-border p-8 rounded-lg mb-12 text-left">
             <p className="text-secondary font-serif text-xl mb-4 text-center border-b border-border/50 pb-4">Booking Protocol</p>
             <p className="text-muted-foreground text-sm mb-4 text-center">When booking please text me the following:</p>
             <ul className="space-y-3 text-foreground/90 font-light mb-6 list-disc list-inside">
@@ -318,14 +426,14 @@ export default function Home() {
           </div>
 
           <a 
-            href="sms:+61&body=Hi%20Alexa%2C%20I'd%20like%20to%20book%20a%20session."
+            href="sms:?body=Hi%20Alexa%2C%20I%20would%20like%20to%20book%20a%20session."
             className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-primary text-primary-foreground text-lg font-medium rounded-md pulse-glow hover:bg-primary/90 transition-colors group"
           >
             Text to Book 
             <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
           </a>
           
-          <div className="mt-8 flex items-center justify-center gap-6 text-muted-foreground">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-muted-foreground">
             <span className="flex items-center gap-2 text-sm">
               <Smartphone size={16} /> @alexagray2003
             </span>
