@@ -196,7 +196,7 @@ export default function Home() {
         
         {/* Background */}
         <div className="absolute inset-0">
-          <img src={newTwo} alt="Alexa Gray" className="w-full h-full object-cover" />
+          <img src={newTwo} alt="Alexa Grey" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-[rgba(8,8,8,0.3)] to-[rgba(8,8,8,0.85)]" />
         </div>
 
@@ -204,7 +204,7 @@ export default function Home() {
         <div className="absolute bottom-[15vh] w-full px-6 flex flex-col items-center z-20">
           <h1 className="font-serif text-[clamp(4rem,12vw,14rem)] font-extralight text-foreground tracking-[0.15em] leading-[0.8] mb-6 flex justify-center uppercase ml-[0.15em]">
             <TextReveal text="ALEXA" delay={0} className="mr-[clamp(1rem,3vw,3rem)]" />
-            <TextReveal text="GRAY" delay={0.3} />
+            <TextReveal text="GREY" delay={0.3} />
           </h1>
           
           <motion.div 
@@ -262,7 +262,7 @@ export default function Home() {
           <span className="absolute -bottom-12 -right-12 md:-bottom-24 md:-right-24 text-[8rem] md:text-[16rem] font-serif italic text-gold/5 leading-none select-none rotate-180">"</span>
           
           <div className="mt-12">
-            <p className="text-label text-muted">— Alexa Gray</p>
+            <p className="text-label text-muted">— Alexa Grey</p>
           </div>
         </motion.div>
       </section>
@@ -274,7 +274,7 @@ export default function Home() {
           {/* Left: Sticky Image */}
           <div className="w-full lg:w-[55%] relative">
             <div className="lg:sticky lg:top-0 h-[70vh] lg:h-[100vh] w-full overflow-hidden">
-              <img src={newTwo} alt="Alexa Gray Portrait" className="w-full h-full object-cover" />
+              <img src={newTwo} alt="Alexa Grey Portrait" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#080808]" />
               
               <div className="absolute bottom-8 right-8 border border-gold/30 bg-black/40 backdrop-blur-md px-4 py-2 corner-brackets">
@@ -728,7 +728,7 @@ export default function Home() {
           Photos are recent and verified. Independent.
         </p>
         <p className="font-sans text-[10px] uppercase tracking-[0.1em] text-muted/50 text-center">
-          © {new Date().getFullYear()} Alexa Gray. All rights reserved.
+          © {new Date().getFullYear()} Alexa Grey. All rights reserved.
         </p>
       </footer>
     </>

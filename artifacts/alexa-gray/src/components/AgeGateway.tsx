@@ -33,7 +33,7 @@ export default function AgeGateway({ onEnter }: AgeGatewayProps) {
         >
           <div className="mb-8">
             <h1 className="text-5xl md:text-6xl font-serif text-[#C9A96E] mb-2 tracking-wide text-glow">
-              Alexa Gray
+              Alexa Grey
             </h1>
             <p className="text-sm uppercase tracking-[0.3em] text-[#E8E0D5]/60">
               Perth, WA
