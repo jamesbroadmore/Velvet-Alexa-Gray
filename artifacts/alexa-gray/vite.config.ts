@@ -5,27 +5,27 @@ import { defineConfig } from 'vite';
 
 import runtimeErrorOverlay from '@replit/vite-plugin-runtime-error-modal';
 
+// PORT is only needed by the dev server, not during `vite build`.
+// On Vercel (and any CI build runner) PORT is typically absent, so we
+// make it optional and fall back to 3000 for local tooling that needs a
+// default without a PORT env var.
 const rawPort = process.env.PORT;
+const isBuildMode = process.env.NODE_ENV === 'production' || !rawPort;
 
-if (!rawPort) {
+if (!rawPort && !isBuildMode) {
   throw new Error(
     'PORT environment variable is required but was not provided.',
   );
 }
 
-const port = Number(rawPort);
+const port = rawPort ? Number(rawPort) : 3000;
 
-if (Number.isNaN(port) || port <= 0) {
+if (rawPort && (Number.isNaN(port) || port <= 0)) {
   throw new Error(`Invalid PORT value: "${rawPort}"`);
 }
 
-const basePath = process.env.BASE_PATH;
-
-if (!basePath) {
-  throw new Error(
-    'BASE_PATH environment variable is required but was not provided.',
-  );
-}
+// BASE_PATH defaults to "/" when not set (e.g. during Vercel builds).
+const basePath = process.env.BASE_PATH ?? '/';
 
 export default defineConfig({
   base: basePath,
